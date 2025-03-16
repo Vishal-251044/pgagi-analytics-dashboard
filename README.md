@@ -82,48 +82,15 @@ Welcome to **PGAGI-Dashboard**! 🚀 This is a **MERN stack** application that p
 ## 🌍 Live Demo
 🔗 **Deployed Link**: [PGAGI-Dashboard](https://pgagi-frontend.onrender.com) 🌐
 
----
-
-## 📷 Screenshots
-📌 **Weather Data Visualization** 📊  
-📌 **Live News Updates** 📰  
-📌 **Stock Market Data** 📉  
-📌 **Google Authentication** 🔑  
-📌 **Contact Admin Form** 📩  
-
-(Include screenshots here)
-
----
 
 ## 📝 Future Enhancements
 - 🔥 **More Data Sources** – Adding more APIs for better insights
-- 🎨 **Dark Mode** – Improved UI with dark mode
 - 🚀 **Performance Optimization** – Faster data fetching
 
----
-
-## 💡 Contributing
-1. Fork the repo 🍴
-2. Create a new branch ✨
-   ```sh
-   git checkout -b feature-name
-   ```
-3. Commit your changes ✅
-   ```sh
-   git commit -m "Added a new feature"
-   ```
-4. Push to GitHub 🚀
-   ```sh
-   git push origin feature-name
-   ```
-5. Create a Pull Request 🔃
-
----
 
 ## 🤝 Contact
-📧 **Email**: your-email@example.com  
-🐦 **Twitter**: [@yourhandle](https://twitter.com/yourhandle)  
-👨‍💻 **LinkedIn**: [Your Profile](https://linkedin.com/in/yourprofile)  
+📧 **Email**: vishalsubhashchavan2004@gmail.com  
+👨‍💻 **LinkedIn**: https://www.linkedin.com/in/vishal-subhash-chavan-498b67262/
 
 ---
 
