@@ -121,8 +121,29 @@ const Finance = () => {
                         options={SYMBOLS}
                         value={symbol}
                         onChange={setSymbol}
-                        className="finance-dashboard-stock-select"
+                        styles={{
+                            control: (provided) => ({
+                                ...provided,
+                                backgroundColor: "#000",
+                                border: "2px solid #000", 
+                                color: "#fff", 
+                            }),
+                            singleValue: (provided) => ({
+                                ...provided,
+                                color: "#fff", 
+                            }),
+                            menu: (provided) => ({
+                                ...provided,
+                                backgroundColor: "#000", 
+                            }),
+                            option: (provided, state) => ({
+                                ...provided,
+                                backgroundColor: state.isFocused ? "#222" : "#000", 
+                                color: "#fff",
+                            }),
+                        }}
                     />
+
                     <select
                         value={interval}
                         onChange={(e) => setInterval(e.target.value)}
@@ -147,8 +168,13 @@ const Finance = () => {
 
                 {loading && (
                     <div className="finance-dashboard-loading-indicator">
+                        <div className="loading-spinner"></div>
                         <span>Fetching Data</span>
-                        <span className="loading-dots">...</span>
+                        <span className="loading-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
                     </div>
                 )}
 
