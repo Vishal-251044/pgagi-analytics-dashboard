@@ -139,6 +139,7 @@ const Finance = () => {
                             option: (provided, state) => ({
                                 ...provided,
                                 backgroundColor: state.isFocused ? "#222" : "#000", 
+                                border: "1px solid aqua",
                                 color: "#fff",
                             }),
                         }}
