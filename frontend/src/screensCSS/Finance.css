@@ -1,126 +1,189 @@
 .finance-dashboard-container-dark-theme {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 20px;
-    min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.finance-dashboard-heading-dark {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f6ff00;
+  font-weight: bold;
+}
+
+.finance-dashboard-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.finance-dashboard-stock-select,
+.finance-dashboard-interval-select {
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 1px solid #00ffd5;
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  max-width: 250px;
+}
+
+.finance-dashboard-fetch-button {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  max-width: 150px;
+}
+
+.finance-dashboard-fetch-button:hover {
+  background-color: #00d3e6;
+}
+
+.finance-dashboard-stock-info {
+  text-align: center;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+.finance-dashboard-stock-info p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.finance-dashboard-stock-info b {
+  color: #00ffd5;
+}
+
+.finance-dashboard-chart-container {
+  width: 90%;
+  max-width: 900px;
+  height: 450px;  
+  margin: 0 auto;
+}
+
+.finance-dashboard-loading-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff9800;
+  margin: 20px 0;
+}
+
+.loading-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ff9800;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loading-dots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  background-color: #ff9800;
+  border-radius: 50%;
+  animation: loadingAnimation 1.5s infinite ease-in-out;
+}
+
+.loading-dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+.loading-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loading-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes loadingAnimation {
+  0% {
+      transform: scale(1);
+      opacity: 1;
   }
-  
-  .finance-dashboard-heading-dark {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #d3e600;
+  50% {
+      transform: scale(1.4);
+      opacity: 0.6;
   }
-  
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.finance-dashboard-error-message {
+  color: red;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .finance-dashboard-container-dark-theme {
+      padding: 10px;
+  }
+
+  .finance-dashboard-stock-info {
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      margin: 0 auto; /* Ensures centering */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .finance-dashboard-chart-container {
+      width: 100%;
+      max-width: 400px; 
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto; 
+  }
+
   .finance-dashboard-search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
   }
-  
+
   .finance-dashboard-stock-select,
   .finance-dashboard-interval-select,
   .finance-dashboard-fetch-button {
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1rem;
-    border: 1px solid #00ffd5;
-    color: white;
-  }
-  
-  .finance-dashboard-fetch-button {
-    background-color: #ff9800;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .finance-dashboard-fetch-button:hover {
-    background-color: #00d3e6;
-  }
-  
-  .finance-dashboard-error-message {
-    color: red;
-    text-align: center;
-  }
-  
-  .finance-dashboard-loading-indicator {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .finance-dashboard-loading-dots span {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin: 0 2px;
-    background-color: #ff9800;
-    border-radius: 50%;
-    animation: loadingAnimation 1.5s infinite ease-in-out;
-  }
-  
-  .finance-dashboard-loading-dots span:nth-child(1) {
-    animation-delay: 0s;
-  }
-  .finance-dashboard-loading-dots span:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  .finance-dashboard-loading-dots span:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-  
-  @keyframes loadingAnimation {
-    0% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    50% {
-      transform: scale(1.4);
-      opacity: 0.6;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  
-  .finance-dashboard-stock-info {
-    text-align: center;
-    background-color: #000000;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 600px;
-  }
-  
-  .finance-dashboard-chart-container {
-    width: 100%;
-    max-width: 900px;
-    height: 450px;  
-    margin: 0 auto;
-  }
-  
-  @media (max-width: 768px) {
-    .finance-dashboard-container-dark-theme {
-      padding: 10px;
-    }
-  
-    .finance-dashboard-stock-info {
       width: 100%;
-    }
-  
-    .finance-dashboard-chart-container {
-      height: 350px;
-    }
+      max-width: 300px;
   }
-  
+}
