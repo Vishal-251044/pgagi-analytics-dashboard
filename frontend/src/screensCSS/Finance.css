@@ -1,0 +1,126 @@
+.finance-dashboard-container-dark-theme {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .finance-dashboard-heading-dark {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #d3e600;
+  }
+  
+  .finance-dashboard-search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .finance-dashboard-stock-select,
+  .finance-dashboard-interval-select,
+  .finance-dashboard-fetch-button {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid #00ffd5;
+    color: white;
+  }
+  
+  .finance-dashboard-fetch-button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .finance-dashboard-fetch-button:hover {
+    background-color: #00d3e6;
+  }
+  
+  .finance-dashboard-error-message {
+    color: red;
+    text-align: center;
+  }
+  
+  .finance-dashboard-loading-indicator {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .finance-dashboard-loading-dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: #ff9800;
+    border-radius: 50%;
+    animation: loadingAnimation 1.5s infinite ease-in-out;
+  }
+  
+  .finance-dashboard-loading-dots span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .finance-dashboard-loading-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .finance-dashboard-loading-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes loadingAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.4);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .finance-dashboard-stock-info {
+    text-align: center;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .finance-dashboard-chart-container {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;  
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .finance-dashboard-container-dark-theme {
+      padding: 10px;
+    }
+  
+    .finance-dashboard-stock-info {
+      width: 100%;
+    }
+  
+    .finance-dashboard-chart-container {
+      height: 350px;
+    }
+  }
+  
