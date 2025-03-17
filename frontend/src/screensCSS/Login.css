@@ -169,17 +169,31 @@
     }
 
     .input-field1 {
-        width: 85%;
+        width: 82%;
     }
 
-    .google-auth-button {
+    .google-authentication {
         display: flex;
-        margin-left: 35px;
-        width: 70%;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background: rgb(0, 0, 0);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        margin: 10px auto 10px;
+    }
+
+    .google-authentication button {
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 12px 20px;
+        border-radius: 6px;
+        cursor: pointer;
     }
 
     .authentication-image-container {
         display: none;
     }
 }
-
