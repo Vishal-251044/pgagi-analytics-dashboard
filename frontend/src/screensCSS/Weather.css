@@ -85,7 +85,7 @@
 
 @media (max-width: 768px) {
     .weather-container {
-        padding: 15px;
+        padding: 10px;
         justify-content: flex-start;
     }
 
