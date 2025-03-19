@@ -209,11 +209,7 @@ const Login = () => {
                                             className="primary-button-login"
                                             disabled={loading}
                                         >
-                                            {loading ? (
-                                                <div className="spinner"></div>
-                                            ) : (
-                                                "Create Account"
-                                            )}
+                                             {loading ? "Loading..." : "Create Account"}
                                         </button>
 
                                         <div className="google-authentication">
