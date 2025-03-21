@@ -197,3 +197,9 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 720px) and (min-width: 500px) {
+  .input-field1 {
+    width: 90%;
+  }
+}
