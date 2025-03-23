@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-logo">
         <Link to="/">
-          <span className="logo-part Ai">PGIGA-</span>
+          <span className="logo-part Ai">PGAGI-</span>
           <span className="logo-part Models">Dashboard</span>
         </Link>
       </div>
@@ -18,7 +18,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-copyright">
-        <p>&copy; 2024 PGIGA-Dashboard. All rights reserved.</p>
+        <p>&copy; 2024 PGAGI-Dashboard. All rights reserved.</p>
       </div>
     </footer>
   );
